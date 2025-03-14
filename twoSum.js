@@ -6,6 +6,8 @@ add up to the targe
     Output: [0, 1]  // Because nums[0] + nums[1] = 2 + 7 = 9
 */
 
+////// brute force 0(n^2) //////
+
 function twoSum(nums, target) {
     for(let i = 0; i < nums.length; i++) {
         for (let j = i + 1; j < nums.length; j++) {
@@ -17,9 +19,6 @@ function twoSum(nums, target) {
     return null;
 }
 
-
 console.log(twoSum([1,2,3,4], 3)); // [0, 1]
-
 console.log(twoSum([1,2,3,4], 7)); // [2, 3]
-
 console.log(twoSum([4,2,3,1], 7)); // [0, 2]
