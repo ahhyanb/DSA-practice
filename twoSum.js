@@ -9,16 +9,16 @@ add up to the targe
 ////// brute force 0(n^2) //////
 
 function twoSum(nums, target) {
-    for(let i = 0; i < nums.length; i++) {
-        for (let j = i + 1; j < nums.length; j++) {
-            if (nums[i] + nums[j] === target) {
-                return [i, j];
-            }
-        }
+  for (let i = 0; i < nums.length; i++) {
+    for (let j = i + 1; j < nums.length; j++) {
+      if (nums[i] + nums[j] === target) {
+        return [i, j]; // returns the first 2 index that sums the target
+      }
     }
-    return null;
+  }
+  return null; // null for no match
 }
 
-console.log(twoSum([1,2,3,4], 3)); // [0, 1]
-console.log(twoSum([1,2,3,4], 7)); // [2, 3]
-console.log(twoSum([4,2,3,1], 7)); // [0, 2]
+console.log(twoSum([1, 2, 3, 4], 3)); // [0, 1]
+console.log(twoSum([1, 2, 3, 4], 7));; // [2, 3]
+console.log(twoSum([4, 2, 3, 1], 7)) // [0, 2]

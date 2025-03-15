@@ -5,9 +5,9 @@ function twoSumMap(nums, target) {
         const dif = target - nums[i];
 
         if(map.has(dif)) {
-            return [map.get(dif), i]; // get the index of that dif and the current index
+            return [map.get(dif), i]; // get the index of that dif and the current index of the iteration
         }
-        map.set(nums[i], i); // if its not in the map put it in the map
+        map.set(nums[i], i); // if its not in the map, put it in the map
     }
 
     return null; // no pairs found
