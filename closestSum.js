@@ -42,3 +42,8 @@ function closestSum(nums, target) {
 }
 
 console.log(closestSum([2, 5, 9, 12], 10)); // Output: [0, 2] (2 + 9 = 11)
+
+
+function closestSumOpt(nums, target) {
+    
+}
